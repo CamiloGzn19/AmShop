@@ -13,11 +13,16 @@ import {
   List,
   Element,
   BtnCar,
+  BtnCompra,
   Car,
+  Loc,
+  Cit,
 } from "../styles/Navbar_styles";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutAsync } from "../Redux/actions/actionLogin";
 
 export const Navbar = () => {
+  const dispatch = useDispatch();
 
   const [city, setCity] = useState("");
 
@@ -26,7 +31,7 @@ export const Navbar = () => {
   }, []);
 
   const nombre = useSelector((store) => store.login.name);
-  const nombre2 = useSelector((store) => store.register.name)
+  const nombre2 = useSelector((store) => store.register.name);
 
   // Geolocalizar
 
@@ -56,6 +61,11 @@ export const Navbar = () => {
     }
   };
 
+  // Logout
+
+  const handleLogout = () => {
+    dispatch(logoutAsync());
+  };
 
   return (
     <div>
@@ -68,17 +78,27 @@ export const Navbar = () => {
             />
           </Link>
         </div>
-        <div>
-          <BodyBold1>Ciudad</BodyBold1>
-          <BodyBold1>{city}</BodyBold1>
-        </div>
+        <Loc>
+          <img
+            src="https://res.cloudinary.com/dilwbkj5s/image/upload/v1647206826/Sprint%203/local_mij8rn.svg"
+            alt="local"
+          />
+          <Cit>
+            <BodyRegular2>Ciudad</BodyRegular2>
+            <BodyBold1>{city}</BodyBold1>
+          </Cit>
+        </Loc>
         {/* <div>
           <Search type="text" />
         </div> */}
         <Search />
         <div>
-          <BodyRegular2>Hola, {nombre2} {nombre}</BodyRegular2>
-          <BodyBold1>Cerrar Sesión</BodyBold1>
+          <BodyRegular2>
+            Hola {nombre2} {nombre}
+          </BodyRegular2>
+          <BtnCompra>
+            <BodyRegular2 onClick={handleLogout}>Cerrar Sesión</BodyRegular2>
+          </BtnCompra>
         </div>
         <div>
           <BodyRegular2>Devoluciones</BodyRegular2>
@@ -94,17 +114,14 @@ export const Navbar = () => {
         </BtnCar>
       </Main>
       <Sub>
-        <div></div>
-        <div>
-          <List>
-            <Element>Tarjetas de regalo</Element>
-            <Element>Prime</Element>
-            <Element>Los Más vendidos</Element>
-            <Element>AmazonBasics</Element>
-            <Element>Cómputo y Tabletas</Element>
-            <Element>Lo Más Regalados</Element>
-          </List>
-        </div>
+        <List>
+          <Element>Tarjetas de regalo</Element>
+          <Element>Prime</Element>
+          <Element>Los Más vendidos</Element>
+          <Element>AmazonBasics</Element>
+          <Element>Cómputo y Tabletas</Element>
+          <Element>Lo Más Regalados</Element>
+        </List>
       </Sub>
       <Sub2>
         <List>

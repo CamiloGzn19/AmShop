@@ -9,6 +9,15 @@ export const Main = styled.div`
   color: white;
 `;
 
+export const Loc = styled.div`
+  display: flex;
+`;
+
+export const Cit = styled.div`
+  margin-left: 20px;
+  height: 50px;
+`;
+
 export const Car = styled.div`
   width: 10%;
   display: flex;
@@ -56,6 +65,7 @@ export const Sub = styled.div`
 `;
 
 export const List = styled.ul`
+  margin-left: -30px;
   display: inline-flex;
   list-style-type: none;
 `;
@@ -63,11 +73,16 @@ export const List = styled.ul`
 export const Element = styled.li`
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 12px;
   line-height: 24px;
-  font-weight: 700;
-  padding-left: 10px;
+  font-weight: 400;
+  padding-left: 40px;
+  cursor: pointer;
+  &:hover{
+    font-weight: bold;
+    font-weight: 700;
+  }
 `;
 
 // Tercer Nav
@@ -87,6 +102,24 @@ export const BtnCar = styled.button`
   width: 84px;
   border: 0;
   background-color: transparent;
+`;
+
+export const BtnCompra = styled.button`
+  cursor: pointer;
+  background-color: #f0ad64;
+  width: 100px;
+  height: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+  border: 0;
+  border-radius: 4px;
+  &:hover{
+    color: white;
+  }
 `;
 
 // El search

@@ -61,7 +61,7 @@ export const loginSincrono = (id, displayname) => {
 
 // Logout
 
-export const logoutAsyn = () => {
+export const logoutAsync = () => {
   return (dispatch) => {
     const auth = getAuth();
     signOut(auth)
