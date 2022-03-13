@@ -4,6 +4,7 @@ export const Part = styled.div`
   display: flex;
   justify-content: start;
   width: 100%;
+  margin-bottom: 10px;
 `;
 
 export const ComentCont = styled.div`

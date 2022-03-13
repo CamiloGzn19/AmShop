@@ -85,7 +85,7 @@ const Login = () => {
       </Form>
       <h3>¿Eres nuevo en Amazonas?</h3>
       <Link to="/register">
-        <Reg>Crea tu cuenta de Amazon</Reg>
+        <Reg>Crea tu cuenta de Amazonas</Reg>
       </Link>
     </Main>
   );

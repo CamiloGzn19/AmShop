@@ -237,4 +237,7 @@ export const ImgBtn = styled.img`
   height: 32px;
   border-radius: 2px;
   margin-right: 10px;
+  &:hover{
+    box-shadow: 0px 0px 2px 2px #f0ad64;
+  }
 `;

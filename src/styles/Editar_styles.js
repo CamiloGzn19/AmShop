@@ -4,7 +4,7 @@ export const Own = styled.div`
   position: absolute;
   display: flex;
   width: 20%;
-  height: 600px;
+  height: 500px;
   right: 0;
   top: 820px;
   margin-right: 30px;
@@ -18,13 +18,11 @@ export const For = styled.form`
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
-  width: 350px;
-  padding-bottom: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  width: 300px;
 `;
 
 export const Titl = styled.h1`
-  padding-top: 15px;
   font-size: 28px;
   margin-bottom: 20px;
 `;

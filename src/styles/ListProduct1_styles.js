@@ -25,11 +25,13 @@ export const CardCont = styled.div`
 
 export const Card = styled.div`
   width: 312px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
 `;
 
 export const Ref = styled.a`
+margin-top: 20px;
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
@@ -41,6 +43,7 @@ export const Ref = styled.a`
 `;
 
 export const Price = styled.p`
+  margin-left: 0px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
