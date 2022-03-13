@@ -197,16 +197,10 @@ export const Reg = styled.button`
 `;
 
 export const BtnPhoto = styled.button`
-  width: 274px;
-  height: 40px;
-  margin-top: 20px;
-  /* background: linear-gradient(
-    0deg,
-    rgba(241, 197, 87, 1) 0%,
-    rgba(246, 222, 162, 1) 100%
-  ); */
+  width: 274px ;
+  height: 40px ;
+  margin-top: 20px ;
   background-color: #ffdc14;
-  /* border: 1px solid gray; */
   border: 0;
   border-radius: 5px;
   font-family: Roboto;

@@ -75,8 +75,6 @@ const Cart = () => {
     window.location.reload();
   }, 2000);
 
-  console.log(formik.initialValues);
-
   // Subir imagen
 
   const handlePictureClick = () => {
@@ -197,7 +195,6 @@ const Cart = () => {
                 required
               />
               <BtnPhoto
-                className="btn btn-dark"
                 type="button"
                 onClick={handlePictureClick}
               >

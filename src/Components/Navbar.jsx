@@ -26,6 +26,7 @@ export const Navbar = () => {
   }, []);
 
   const nombre = useSelector((store) => store.login.name);
+  const nombre2 = useSelector((store) => store.register.name)
 
   // Geolocalizar
 
@@ -76,8 +77,8 @@ export const Navbar = () => {
         </div> */}
         <Search />
         <div>
-          <BodyRegular2>Hola, {nombre}</BodyRegular2>
-          <BodyBold1>Cuenta y listas</BodyBold1>
+          <BodyRegular2>Hola, {nombre2} {nombre}</BodyRegular2>
+          <BodyBold1>Cerrar Sesión</BodyBold1>
         </div>
         <div>
           <BodyRegular2>Devoluciones</BodyRegular2>

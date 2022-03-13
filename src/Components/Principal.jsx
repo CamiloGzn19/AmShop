@@ -126,7 +126,7 @@ const Principal = () => {
                 (COP 134,539.47) en artículos elegibles
               </Body2R>
               <BtnComprar id={e.id} onClick={(e) => Comprar(e)}>
-                Agregar al carrito
+                Añadir al carrito
               </BtnComprar>
 
               <br />

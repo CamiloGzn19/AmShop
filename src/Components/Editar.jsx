@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Form, Modal } from "react-bootstrap";
+import { Own, For, Titl, Lab, Inp, Check } from "../styles/Editar_styles";
 import { useDispatch } from "react-redux";
 import { useForm } from "../hooks/useForm";
 import { editAsyn } from "../Redux/actions/actionOwnProducts";
@@ -14,11 +14,12 @@ const Editar = ({ modal }) => {
   const [values, handleInputChange, reset] = useForm({
     nombre: modal.nombre,
     categoria: modal.categoria,
+    marca: modal.marca,
     codigo: modal.codigo,
-    descripcion: modal.descripcion,
     precio: modal.precio,
+    descripcion: modal.descripcion,
   });
-  const { nombre, categoria, codigo, descripcion, precio } = values;
+  const { nombre, codigo, descripcion, precio, categoria } = values;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,79 +31,60 @@ const Editar = ({ modal }) => {
   };
 
   return (
-    <div>
-      <>
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Editar producto</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Nombre</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="nombre"
-                  placeholder="Nuevo nombre"
-                  value={nombre}
-                  onChange={handleInputChange}
-                />
+    <>
+      <Own show={show}>
+        <For onSubmit={handleSubmit}>
+          <Titl>Editar producto</Titl>
+          <Lab>Nombre</Lab>
+          <Inp
+            type="text"
+            name="nombre"
+            placeholder="Nuevo nombre"
+            value={nombre}
+            onChange={handleInputChange}
+          />
+          <Lab>Categoria</Lab>
+          <Inp
+            type="text"
+            name="categoria"
+            autoComplete="off"
+            placeholder="Nueva categoria"
+            value={categoria}
+            onChange={handleInputChange}
+          />
+          <Lab>Precio</Lab>
+          <Inp
+            type="text"
+            name="precio"
+            placeholder="Nuevo precio"
+            value={precio}
+            onChange={handleInputChange}
+          />
+          <Lab>Descripción</Lab>
+          <Inp
+            type="text"
+            name="descripcion"
+            placeholder="Nueva descripcion"
+            value={descripcion}
+            onChange={handleInputChange}
+          />
 
-                <Form.Label>Categoria</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="categoria"
-                  placeholder="Nueva categoria"
-                  value={categoria}
-                  onChange={handleInputChange}
-                />
+          <br />
 
-                <Form.Label>Descripcion</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="descripcion"
-                  placeholder="Nueva descripcion"
-                  value={descripcion}
-                  onChange={handleInputChange}
-                />
-
-                <Form.Label>Codigo</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="codigo"
-                  placeholder="El código contiene dos letras y 3 numeros"
-                  value={codigo}
-                  onChange={handleInputChange}
-                />
-
-                <Form.Label>Precio</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="precio"
-                  placeholder="El precio en Pesos Colombiano"
-                  value={precio}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
-
-              <Button variant="secondary" onClick={handleClose}>
-                Cerrar
-              </Button>
-              <Button
-                type="submit"
-                variant="primary"
-                onClick={() => {
-                  handleClose();
-                  handleSubmit();
-                }}
-              >
-                Guardar cambios
-              </Button>
-            </Form>
-          </Modal.Body>
-        </Modal>
-      </>
-    </div>
+          <Check
+            type="submit"
+            variant="primary"
+            onClick={() => {
+              handleClose();
+              handleSubmit();
+            }}
+          >
+            Guardar cambios
+          </Check>
+          <Check onClick={() => handleClose()}>Cerrar</Check>
+        </For>
+      </Own>
+    </>
   );
 };
 

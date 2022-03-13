@@ -1,7 +1,6 @@
 import { typesProducts } from "../types/types";
 import { db } from "../firebase/firebaseConfig";
 import {
-  addDoc,
   collection,
   getDocs,
   query,
