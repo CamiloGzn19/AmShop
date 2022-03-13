@@ -88,9 +88,6 @@ export const Navbar = () => {
             <BodyBold1>{city}</BodyBold1>
           </Cit>
         </Loc>
-        {/* <div>
-          <Search type="text" />
-        </div> */}
         <Search />
         <div>
           <BodyRegular2>

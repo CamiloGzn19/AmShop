@@ -118,4 +118,8 @@ export const BtnComprar = styled.button`
   color: #333333;
   border: 0;
   border-radius: 4px;
+  &:hover {
+    color: #000;
+    background-color: #f0ad64;
+  }
 `;

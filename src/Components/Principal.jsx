@@ -16,6 +16,7 @@ import {
 } from "../styles/Principal_styles";
 
 const Principal = () => {
+
   const [carrito, setCarrito] = useState([]);
 
   const dispatch = useDispatch();
