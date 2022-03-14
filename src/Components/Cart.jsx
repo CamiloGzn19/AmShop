@@ -101,7 +101,7 @@ const Cart = () => {
   useEffect(() => {
     dispatch(listOwnProductsAsync());
     getCompras();
-  }, []);
+  }, [dispatch]);
 
   // Editar los productos que he publicado
 
