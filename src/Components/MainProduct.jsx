@@ -36,10 +36,10 @@ import Opinions from "./Opinions";
 const MainProduct = () => {
   const [carrito, setCarrito] = useState([]);
   const [product, setProducts] = useState([]);
-  const [images, setImages] = useState([])
-  const [images2, setImages2] = useState([])
-  const [images3, setImages3] = useState([])
-  const [current, setCurrent] = useState([])
+  const [images, setImages] = useState([]);
+  const [images2, setImages2] = useState([]);
+  const [images3, setImages3] = useState([]);
+  const [current, setCurrent] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -51,13 +51,13 @@ const MainProduct = () => {
     let data = localStorage.getItem("producto");
     data = JSON.parse(data);
     setProducts(data);
-    setImages(data[0].imagenes[0])
-    setImages2(data[0].imagenes[1])
-    setImages3(data[0].imagenes[2])
-    setCurrent(data[0].imagenes[0])
+    setImages(data[0].imagenes[0]);
+    setImages2(data[0].imagenes[1]);
+    setImages3(data[0].imagenes[2]);
+    setCurrent(data[0].imagenes[0]);
   };
 
-  console.log(product)
+  console.log(product);
 
   const list = useSelector((store) => store.products.products);
 
@@ -91,16 +91,16 @@ const MainProduct = () => {
   // Cambiar imagen
 
   const ChangeImage = () => {
-    setCurrent(images2)
-  }
+    setCurrent(images2);
+  };
 
   const ChangeImage2 = () => {
-    setCurrent(images3)
-  }
+    setCurrent(images3);
+  };
 
   const resetImage = () => {
-    setCurrent(images)
-  }
+    setCurrent(images);
+  };
 
   return (
     <div>
@@ -113,13 +113,13 @@ const MainProduct = () => {
             <PhoDet>
               <ImDiv>
                 <BtnDet>
-                  <ImgBtn src={images} onClick={resetImage}/>
+                  <ImgBtn src={images} onClick={resetImage} />
                 </BtnDet>
                 <BtnDet>
-                  <ImgBtn src={images2} onClick={ChangeImage}/>
+                  <ImgBtn src={images2} onClick={ChangeImage} />
                 </BtnDet>
                 <BtnDet>
-                  <ImgBtn src={images3} onClick={ChangeImage2}/>
+                  <ImgBtn src={images3} onClick={ChangeImage2} />
                 </BtnDet>
               </ImDiv>
               <div>
@@ -176,18 +176,10 @@ const MainProduct = () => {
               <DescTitle>Acerca de este artículo</DescTitle>
               <ContList>
                 <List>- {e.description[0]}</List>
-                <List>
-                  - {e.description[1]}
-                </List>
-                <List>
-                  - {e.description[2]}
-                </List>
-                <List>
-                  - {e.description[3]}
-                </List>
-                <List>
-                  - {e.description[4]}
-                </List>
+                <List>- {e.description[1]}</List>
+                <List>- {e.description[2]}</List>
+                <List>- {e.description[3]}</List>
+                <List>- {e.description[4]}</List>
               </ContList>
             </Desc>
           </div>
