@@ -50,7 +50,7 @@ export const Navbar = () => {
           .get(city)
           .then((response) => {
             console.log(
-              response.data.results[0].address_components[4].long_name
+              response.data.results[0].address_components[0].long_name
             );
             setCity(response.data.results[0].address_components[0].long_name);
           })
