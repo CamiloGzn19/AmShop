@@ -36,7 +36,8 @@ export const LogoCar = styled.img`
 
 export const BodyBold1 = styled.h3`
   color: white;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -45,7 +46,8 @@ export const BodyBold1 = styled.h3`
 `;
 
 export const BodyRegular2 = styled.h3`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -71,7 +73,8 @@ export const List = styled.ul`
 `;
 
 export const Element = styled.li`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -79,7 +82,7 @@ export const Element = styled.li`
   font-weight: 400;
   padding-left: 40px;
   cursor: pointer;
-  &:hover{
+  &:hover {
     font-weight: bold;
     font-weight: 700;
   }
@@ -117,7 +120,7 @@ export const BtnCompra = styled.button`
   color: #333333;
   border: 0;
   border-radius: 4px;
-  &:hover{
+  &:hover {
     color: white;
   }
 `;

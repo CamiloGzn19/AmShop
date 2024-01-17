@@ -8,7 +8,8 @@ export const Cont = styled.div`
 export const HeadLine = styled.h1`
   padding-left: 20px;
   padding-bottom: 10px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: bold;
   font-weight: 700;
   font-size: 28px;
@@ -36,7 +37,8 @@ export const Card = styled.div`
 export const Til = styled.div`
   width: 280px;
   margin-top: 20px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -65,7 +67,8 @@ export const Ref = styled.p`
 `;
 
 export const Price = styled.p`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -82,9 +85,10 @@ export const Sep = styled.hr`
 // Textos
 
 export const BodyBold1 = styled.h3`
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   padding-top: 10px;
   margin-left: 15px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -96,7 +100,8 @@ export const Body2R = styled.h4`
   margin-left: 15px;
   padding-top: 10px;
   padding-right: 20px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -109,7 +114,8 @@ export const BtnComprar = styled.button`
   background-color: #f3d184;
   width: 280px;
   height: 32px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;

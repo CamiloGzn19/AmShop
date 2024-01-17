@@ -58,7 +58,8 @@ export const Pti = styled.p`
 // Textos de
 
 export const Title = styled.div`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -68,7 +69,8 @@ export const Title = styled.div`
 `;
 
 export const BodyBold1 = styled.h3`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -77,7 +79,8 @@ export const BodyBold1 = styled.h3`
 `;
 
 export const BodyReg1 = styled.h3`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -197,9 +200,9 @@ export const Reg = styled.button`
 `;
 
 export const BtnPhoto = styled.button`
-  width: 274px ;
-  height: 40px ;
-  margin-top: 20px ;
+  width: 274px;
+  height: 40px;
+  margin-top: 20px;
   background-color: #ffdc14;
   border: 0;
   border-radius: 5px;

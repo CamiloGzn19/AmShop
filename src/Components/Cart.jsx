@@ -71,9 +71,10 @@ const Cart = () => {
 
   // Reset del formulario de
 
-  const regProd = () => setTimeout(() => {
-    window.location.reload();
-  }, 2000);
+  const regProd = () =>
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
 
   // Subir imagen
 
@@ -116,8 +117,10 @@ const Cart = () => {
   const getCompras = () => {
     let data = localStorage.getItem("comprar");
     data = JSON.parse(data);
-    setCant(data.length);
-    setCompras(data);
+    if (data) {
+      setCant(data.length);
+      setCompras(data);
+    }
   };
 
   // Borrar productos del carrito de
@@ -194,10 +197,7 @@ const Cart = () => {
                 onChange={handleFileChanged}
                 required
               />
-              <BtnPhoto
-                type="button"
-                onClick={handlePictureClick}
-              >
+              <BtnPhoto type="button" onClick={handlePictureClick}>
                 Agregar la imagen del producto
               </BtnPhoto>
               <Lab>Nombre</Lab>
@@ -256,7 +256,9 @@ const Cart = () => {
               />
 
               <br />
-              <Check type="submit" onClick={() => regProd()}>Registrar</Check>
+              <Check type="submit" onClick={() => regProd()}>
+                Registrar
+              </Check>
             </For>
           </Own>
           <Sub>

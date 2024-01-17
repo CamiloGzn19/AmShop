@@ -16,7 +16,7 @@ export const loginEmailPassword = (email, password) => {
         console.log("Bienvenid@");
       })
       .catch((e) => {
-        console.log("El usuario no existe");
+        console.log("");
       });
   };
 };

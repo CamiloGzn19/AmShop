@@ -38,21 +38,17 @@ export const Navbar = () => {
   const getPosition = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function (position) {
-        console.log(position);
         let city =
           "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
           position.coords.latitude +
           "," +
           position.coords.longitude +
           "&key=AIzaSyB4LGKEmja14d6bBcaRSLNR31PZUZBqNaI";
-        console.log(city);
+
         axios
           .get(city)
           .then((response) => {
-            console.log(
-              response.data.results[0].address_components[0].long_name
-            );
-            setCity(response.data.results[0].address_components[0].long_name);
+            setCity("Bogotá");
           })
           .catch((e) => {
             console.log(e);
