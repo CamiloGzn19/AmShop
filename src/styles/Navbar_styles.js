@@ -150,6 +150,10 @@ export const Catg = styled.select`
   font-size: 12px;
 `;
 
+export const Hidden = styled.option`
+  display: none;
+`;
+
 export const Busc = styled.input`
   @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
   font-family: "Lato";

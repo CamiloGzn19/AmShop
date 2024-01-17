@@ -4,16 +4,27 @@ import { collection, getDocs, query, where } from "@firebase/firestore";
 
 //Listar
 
-export const listProductsAsync = () => {
+export const listProductsAsync = (filter) => {
   return async (dispatch) => {
     const querySnapshot = await getDocs(collection(db, "Productos"));
     const producto = [];
+    const currentProduct = [];
     querySnapshot.forEach((doc) => {
       producto.push({
         ...doc.data(),
       });
     });
-    dispatch(listSync(producto));
+
+    producto.forEach((element) => {
+      if (element.categoria === filter || element.categoría === filter) {
+        currentProduct.push(element);
+      } else if (filter === "Todos") {
+        currentProduct.push(element);
+      }
+    });
+
+    dispatch(listSync(currentProduct));
+    dispatch(filterAsyn(filter));
   };
 };
 
@@ -48,5 +59,14 @@ export const searchSyn = (propio) => {
   return {
     type: typesProducts.search,
     payload: propio,
+  };
+};
+
+// Filtrar
+
+export const filterAsyn = (filter) => {
+  return {
+    type: typesProducts.filter,
+    payload: filter,
   };
 };

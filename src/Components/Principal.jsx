@@ -16,7 +16,6 @@ import {
 } from "../styles/Principal_styles";
 
 const Principal = () => {
-
   const [carrito, setCarrito] = useState([]);
 
   const dispatch = useDispatch();
@@ -51,40 +50,61 @@ const Principal = () => {
     );
   };
 
+  const filtro = useSelector((store) => store.filtro.filter);
+
   return (
     <div>
       <Cont>
-        <HeadLine>Electrónicos</HeadLine>
-        <Sep />
-        <CardCont>
-          {product.slice(0, 4).map((e) => (
-            <Card  key={e.id}>
-              <Link style={{ color: "inherit" }} to="/product">
-                <Image
-                  src={e.image1}
-                  alt="product"
-                  id={e.id}
-                  onClick={(e) => Detallar(e)}
-                />
-              </Link>
-              <Til>{e.snombre}</Til>
-              <BodyBold1>COP$ {e.precio}</BodyBold1>
-              <Body2R>
-                <b>Envío GRATIS</b> a Colombia cuando gastes más de USD 35.00
-                (COP 134,539.47) en artículos elegibles
-              </Body2R>
-              <BtnComprar id={e.id} onClick={(e) => Comprar(e)}>
-                Añadir al carrito
-              </BtnComprar>
-              <br />
-            </Card>
-          ))}
-        </CardCont>
-        <HeadLine>Hogar y Cocina</HeadLine>
-        <Sep />
+        <>
+          {filtro === "Electrónicos" ||
+          filtro === "Todos" ||
+          filtro === undefined ? (
+            <>
+              <HeadLine>Electrónicos</HeadLine>
+              <Sep />
+            </>
+          ) : (
+            <></>
+          )}
+          <CardCont>
+            {product.slice(0, 4).map((e) => (
+              <Card key={e.id}>
+                <Link style={{ color: "inherit" }} to="/product">
+                  <Image
+                    src={e.image1}
+                    alt="product"
+                    id={e.id}
+                    onClick={(e) => Detallar(e)}
+                  />
+                </Link>
+                <Til>{e.snombre}</Til>
+                <BodyBold1>COP$ {e.precio}</BodyBold1>
+                <Body2R>
+                  <b>Envío GRATIS</b> a Colombia cuando gastes más de USD 35.00
+                  (COP 134,539.47) en artículos elegibles
+                </Body2R>
+                <BtnComprar id={e.id} onClick={(e) => Comprar(e)}>
+                  Añadir al carrito
+                </BtnComprar>
+                <br />
+              </Card>
+            ))}
+          </CardCont>
+        </>
+
+        {filtro === "Hogar y cocina" ||
+        filtro === "Todos" ||
+        filtro === undefined ? (
+          <>
+            <HeadLine>Hogar y Cocina</HeadLine>
+            <Sep />
+          </>
+        ) : (
+          <></>
+        )}
         <CardCont>
           {product.slice(4, 8).map((e) => (
-            <Card key={e.id}> 
+            <Card key={e.id}>
               <Link style={{ color: "inherit" }} to="/product">
                 <Image
                   src={e.image1}
@@ -107,8 +127,17 @@ const Principal = () => {
             </Card>
           ))}
         </CardCont>
-        <HeadLine>Artículos para mascotas</HeadLine>
-        <Sep />
+        {filtro === "Artículos para mascotas" ||
+        filtro === "Todos" ||
+        filtro === undefined ? (
+          <>
+            <HeadLine>Artículos para mascotas</HeadLine>
+            <Sep />
+          </>
+        ) : (
+          <></>
+        )}
+
         <CardCont>
           {product.slice(8, 12).map((e) => (
             <Card key={e.id}>

@@ -1,13 +1,15 @@
 import { useFormik } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import { Busc, BtnBusc, All, Catg } from "../styles/Navbar_styles";
+import { Busc, BtnBusc, All, Catg, Hidden } from "../styles/Navbar_styles";
 import { useDispatch } from "react-redux";
 import * as Yup from "yup";
-import { searchAsyn } from "../Redux/actions/actionProducts";
+import { listProductsAsync, searchAsyn } from "../Redux/actions/actionProducts";
 
 const Search = () => {
   const dispatch = useDispatch();
+
+  const [value, setValue] = useState("");
 
   const formik = useFormik({
     initialValues: {
@@ -21,15 +23,28 @@ const Search = () => {
     },
   });
 
+  const onfilter = (filter) => {
+    dispatch(listProductsAsync(filter));
+    dispatch()
+  };
+
   return (
     <div>
       <Form onSubmit={formik.handleSubmit}>
         <All>
-          <Catg name="cars" id="cars">
-            <option value="Todos los departamentos">Todos los departamentos</option>
+          <Catg
+            value={value}
+            name="cars"
+            id="cars"
+            onChange={(event) => onfilter(event.target.value)}
+          >
+            <Hidden value="Default">Categorias</Hidden>
+            <option value="Todos">Todos los departamentos</option>
             <option value="Electrónicos">Electrónicos</option>
             <option value="Hogar y cocina">Hogar y cocina</option>
-            <option value="Artículos para mascotas">Artículos para mascotas</option>
+            <option value="Artículos para mascotas">
+              Artículos para mascotas
+            </option>
           </Catg>
           <Busc name="search" onChange={formik.handleChange} />
           <BtnBusc type="submit" className="btn btn-outline-dark">

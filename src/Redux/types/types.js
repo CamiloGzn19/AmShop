@@ -8,6 +8,7 @@ export const typesProducts = {
   list: "list",
   search: "search",
   detail: "detail",
+  filter: "filter",
 };
 
 export const typesOwnProducts = {
@@ -16,4 +17,3 @@ export const typesOwnProducts = {
   edit: "edit",
   delete: "delete",
 };
-
