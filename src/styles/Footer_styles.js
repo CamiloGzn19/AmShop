@@ -27,7 +27,8 @@ export const List = styled.h2`
 
 export const BodyBold1 = styled.h3`
   color: white;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -39,7 +40,8 @@ export const BodyBold1 = styled.h3`
 
 export const BodyRegu1 = styled.p`
   color: white;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

@@ -69,6 +69,7 @@ export const Sub = styled.div`
 export const List = styled.ul`
   margin-left: -30px;
   display: inline-flex;
+  item-spacing: 30px;
   list-style-type: none;
 `;
 
@@ -112,7 +113,8 @@ export const BtnCompra = styled.button`
   background-color: #f0ad64;
   width: 100px;
   height: 25px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -141,14 +143,16 @@ export const Catg = styled.select`
   border: 0;
   border-radius: 8px 0 0 8px;
   text-align: center;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
 `;
 
 export const Busc = styled.input`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;

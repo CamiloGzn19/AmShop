@@ -57,7 +57,8 @@ export const Ref = styled.p`
   text-decoration: none;
   margin-top: 10px;
   margin-left: 15px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

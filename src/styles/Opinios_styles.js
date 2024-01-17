@@ -19,12 +19,13 @@ export const Pic = styled.img`
 `;
 
 export const Text = styled.p`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #333333;
-  padding-bottom: 24px; 
+  padding-bottom: 24px;
 `;

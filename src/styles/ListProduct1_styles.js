@@ -6,7 +6,8 @@ export const Cont = styled.div`
 
 export const HeadLine = styled.h1`
   padding-left: 20px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -31,9 +32,10 @@ export const Card = styled.div`
 `;
 
 export const Ref = styled.a`
-margin-top: 20px;
+  margin-top: 20px;
   text-decoration: none;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -44,7 +46,8 @@ margin-top: 20px;
 
 export const Price = styled.p`
   margin-left: 0px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 19px;

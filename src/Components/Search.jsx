@@ -17,7 +17,6 @@ const Search = () => {
       search: Yup.string().required(),
     }),
     onSubmit: ({ search }) => {
-      console.log(search);
       dispatch(searchAsyn(search));
     },
   });

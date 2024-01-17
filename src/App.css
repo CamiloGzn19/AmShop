@@ -6,7 +6,7 @@
 }
 
 .Headline1 {
-  font-family: Roboto;
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -15,7 +15,7 @@
 }
 
 .Subtitle1 {
-  font-family: Roboto;
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -24,7 +24,7 @@
 }
 
 .Body1B {
-  font-family: Roboto;
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -33,7 +33,7 @@
 }
 
 .Body1R {
-  font-family: Roboto;
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -42,7 +42,7 @@
 }
 
 .Body2B {
-  font-family: Roboto;
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -51,7 +51,7 @@
 }
 
 .Body2R {
-  font-family: Roboto;
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -60,7 +60,7 @@
 }
 
 .Button {
-  font-family: Roboto;
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;

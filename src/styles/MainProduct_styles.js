@@ -36,7 +36,8 @@ export const Card = styled.div`
 // Textos
 
 export const Prin = styled.h1`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -49,7 +50,8 @@ export const Prin = styled.h1`
 `;
 
 export const HeadLine = styled.h1`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -60,7 +62,8 @@ export const HeadLine = styled.h1`
 `;
 
 export const SubTitle1 = styled.h2`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -71,7 +74,8 @@ export const SubTitle1 = styled.h2`
 `;
 
 export const BodyRegu1 = styled.h3`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -82,7 +86,8 @@ export const BodyRegu1 = styled.h3`
 
 export const BodyRegu2 = styled.h3`
   padding-bottom: 8px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -93,7 +98,8 @@ export const BodyRegu2 = styled.h3`
 export const BodyRegu1B = styled.h3`
   padding-top: 16px;
   text-align: center;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -104,7 +110,8 @@ export const BodyRegu1B = styled.h3`
 
 export const BodyRegu1B2 = styled.h3`
   padding-top: 16px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -114,7 +121,8 @@ export const BodyRegu1B2 = styled.h3`
 `;
 
 export const BodyBold1 = styled.h3`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -123,7 +131,8 @@ export const BodyBold1 = styled.h3`
 `;
 
 export const BodyBold2 = styled.h3`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -138,7 +147,8 @@ export const BodyBold2 = styled.h3`
 
 export const Bb = styled.b`
   padding-top: 16px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -148,7 +158,8 @@ export const Bb = styled.b`
 `;
 
 export const Br = styled.b`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -163,7 +174,8 @@ export const BtnCarrito = styled.button`
   background-color: #f3d184;
   width: 184px;
   height: 32px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -179,7 +191,8 @@ export const BtnCompra = styled.button`
   background-color: #f0ad64;
   width: 184px;
   height: 32px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -207,7 +220,8 @@ export const ContList = styled.ul`
 
 export const List = styled.li`
   list-style-type: none;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -219,7 +233,8 @@ export const List = styled.li`
 // Description
 
 export const DescTitle = styled.h2`
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -237,7 +252,7 @@ export const ImgBtn = styled.img`
   height: 32px;
   border-radius: 2px;
   margin-right: 10px;
-  &:hover{
+  &:hover {
     box-shadow: 0px 0px 2px 2px #f0ad64;
   }
 `;

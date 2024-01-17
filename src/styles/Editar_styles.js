@@ -32,7 +32,8 @@ export const Lab = styled.label`
   margin-left: 15px;
   margin-top: 10px;
   margin-bottom: 5px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -46,7 +47,8 @@ export const Inp = styled.input`
   padding-left: 15px;
   border-radius: 5px;
   border: 1px solid #c2c2c2;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -65,7 +67,8 @@ export const Check = styled.button`
   );
   border: 1px solid gray;
   border-radius: 5px;
-  font-family: Roboto;
+  @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
