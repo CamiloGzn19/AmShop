@@ -25,7 +25,7 @@ const Search = () => {
 
   const onfilter = (filter) => {
     dispatch(listProductsAsync(filter));
-    dispatch()
+    setValue(filter);
   };
 
   return (
